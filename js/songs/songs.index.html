@@ -1,5 +1,5 @@
 <h2> Songs </h2>
 
 <div ng-repeat='song in vm.songs'>
-  <p> {{song.title}} </p>
+  <p><a ui-sref="songShow({id: song.id})">{{song.title}}</a></p>
 </div>
