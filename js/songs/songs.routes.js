@@ -19,4 +19,10 @@ function RouterFunction ($stateProvider) {
         controllerAs: 'vm'
       })
       // $urlRouterProvider.otherwise('/songs')
+      .state('songShow', {
+        url: '/songs/:id',
+        templateUrl: 'js/songs/songs.show.html',
+        controller: 'SongShowController',
+        controllerAs: 'vm'
+      })
       }
