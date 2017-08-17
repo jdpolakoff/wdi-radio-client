@@ -1,16 +1,7 @@
-<h2> Songs </h2>
-
-<div ng-repeat='song in vm.songs'>
-  <p><a ui-sref="songShow({id: song.id})">{{song.title}}</a></p>
-</div>
-
-<div ui-view>
-  <h3><a ui-sref="songNew">Add a song</a></h3>
-</div>
-
-<!-- <form>
+<p><a ui-sref="songIndex">Cancel</a></p>
+<form>
   <input placeholder ="title" ng-model="vm.newSong.title" />
   <input placeholder="album" ng-model="vm.newSong.album" />
   <input placeholder="photo URL" ng-model="vm.newSong.img_url" />
   <button type="botton" ng-click="vm.create()">Add song</button>
-</form> -->
+</form>
